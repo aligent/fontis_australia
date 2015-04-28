@@ -789,6 +789,23 @@
                         </max_results>
                     </fields>
                 </postcode_autocomplete>
+                <australia_setup>
+                    <label>Australia Setup</label>
+                    <sort_order>40</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <setup_trigger>
+                            <label>Setup AU Tax/Shipping/Currency</label>
+                            <frontend_model>australia/adminhtml_system_config_taxsetup</frontend_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Warning: Triggering the setup will overwrite existing tax, currency and shipping configurations with Australia-specific settings.</comment>
+                        </setup_trigger>
+                    </fields>
+                </australia_setup>
             </groups>
         </fontis_australia>
 

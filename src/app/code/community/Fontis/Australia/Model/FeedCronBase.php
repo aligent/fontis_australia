@@ -147,7 +147,7 @@ abstract class Fontis_Australia_Model_FeedCronBase {
 
     	// Open child process with proc_open
         //$this->log("Opening child: ".$exec_path);
-		$process = proc_open('php '.$exec_path, $descriptorspec, &$pipes);
+		$process = proc_open('php '.$exec_path, $descriptorspec, $pipes);
 
         if (!is_resource($process)) {
             $this->log("Error opening child");
